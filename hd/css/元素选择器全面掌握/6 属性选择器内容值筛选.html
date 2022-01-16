@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/*只要在属性值中出现houdunren就会被选中*/
+			/* h1[title*="houdunren"] {
+				color: red;
+			} */
+			/*独立单词，空白相隔的可以*/
+			/* h1[title~="houdunren"] {
+				color: red;
+			} */
+			/*中杠连接的可以使用*/
+			h1[title|="houdunren"] {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 title="houdunren">HOUDUNREN</h1>
+		<h1 title="houdunren mike">HOUDUNREN MIKE</h1>
+		<h1 title="houdunren-mike">HOUDUNREN-MIKE</h1>
+		<h1 title="www.houdunren.com">WWW.HOUDUNREN.COM</h1>
+	</body>
+</html>

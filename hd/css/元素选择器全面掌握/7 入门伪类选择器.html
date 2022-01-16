@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		/*未访问的时候，颜色红色*/
+		a:link {
+			color: red;
+		}
+		/*点击过之后，颜色是黄色*/
+		a:visited {
+			color: yellow;
+		}
+		/*hover的时候，颜色是绿色*/
+		a:hover {
+			color: green;
+		}
+		/*正在Click的过程显示黑色*/
+		a:active {
+			color: black;
+		}
+
+		input:focus {
+			outline: none;
+		}
+		input:active {
+			background-color: orange;
+		}
+		input:hover {
+			outline: solid 1px red;
+		}
+	</style>
+	<body>
+		<a href="https://www.houdunren.com">后盾人</a>
+		<input type="text" />
+	</body>
+</html>

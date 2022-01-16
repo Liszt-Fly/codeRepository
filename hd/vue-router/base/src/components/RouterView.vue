@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import router from '../router'
+import { path } from '../router'
 const view = computed(() => {
-    const path = window.location.pathname
-    const route = router.routes.find(route => route.path == path)
+
+    const route = router.routes.find(route => route.path == path.value)
     return route.component
 })
 </script>

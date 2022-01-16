@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		article :nth-child(1) {
+			color: red;
+		}
+        ul :nth-child(2n-1){
+            color:red;
+        }
+        ul :nth-child(-n+2){
+           text-decoration: line-through;
+        }
+        ul li:nth-of-type(1){
+            border: solid 1px orangered;
+        }
+    </style>
+	</style>
+	<body>
+		<!-- <main>
+			<article>
+				<h1>后盾人</h1>
+				<aside>
+					<h2>houdunren.com</h2>
+				</aside>
+				<h2>hdcms.com</h2>
+			</article>
+		</main> -->
+		<ul>
+			<li>后盾人</li>
+			<li>hdcms.com</li>
+			<li>houdunren.com</li>
+			<li>houdunwang.com</li>
+		</ul>
+	</body>
+</html>

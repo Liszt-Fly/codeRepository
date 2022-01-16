@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/* 选择多个属性 选择单个属性 不仅选择属性还要选择属性值 前缀*/
+			h1[title][id] {
+				color: red;
+			}
+			h1[title="houdunren"] {
+				color: green;
+			}
+
+			/* h1[title^="m"] {
+				color: orange;
+			}  */
+			/* h2[red] {
+				background-color: orangered;
+				color: white;
+			} */
+		</style>
+	</head>
+	<body>
+		<article>
+			<h1 title id>后盾人</h1>
+			<h1>hdcms.com</h1>
+			<h1 title="houdunren">hdcms.com</h1>
+			<h1 title="mike">HELLO,MIKE</h1>
+			<h2 red>TEST</h2>
+		</article>
+	</body>
+</html>

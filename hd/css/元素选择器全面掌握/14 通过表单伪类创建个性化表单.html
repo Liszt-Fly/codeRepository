@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		input:disabled {
+			border-color: red;
+		}
+		input:enabled {
+			border-color: green;
+		}
+		input:checked + label {
+			color: green;
+		}
+		input:required {
+			background-color: aquamarine;
+		}
+		input:optional {
+			background: orange;
+		}
+		input:valid {
+			background-color: yellow;
+		}
+		input[destination] {
+			color: red;
+		}
+	</style>
+	<body>
+		<form action="">
+			<input type="text" disabled required />
+			<input type="text" />
+
+			<hr />
+			<input type="radio" name="sex" id="boy" />
+			<label for="boy">男</label>
+			<input type="radio" name="sex" id="girl" checked />
+			<label for="girl">女</label>
+			<hr />
+			<input type="email" name="" id="" destination />
+			<button>保存</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/*后代里的第一个元素*/
+			article :first-child {
+				color: red;
+			}
+			/* 子代里的第一个元素
+			article > :first-child {
+				color: green;
+			}
+			/*article下的第一个h1类型*/
+			article h1:first-of-type {
+				border: solid 1px orange;
+			}
+			/* article :last-child {
+				background-color: orangered;
+			} */
+		</style>
+	</head>
+	<body>
+		<main>
+			<article>
+				<h1>后盾人</h1>
+				<aside>
+					<h2>houdunren.com</h2>
+					<h1>test</h1>
+				</aside>
+				<h1>hdcms.com</h1>
+			</article>
+		</main>
+	</body>
+</html>

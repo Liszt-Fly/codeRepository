@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		/*最顶级根元素html的伪类*/
+		:root {
+			color: orange;
+		}
+		div {
+			height: 900px;
+			border: solid 1px #ddd;
+		}
+		/*目标触发到达锚点，颜色更改为绿色*/
+		div:target {
+			color: green;
+		}
+		/*对于内容为空的li不显示*/
+		li:empty {
+			display: none;
+		}
+	</style>
+	<body>
+		<ul>
+			<li>hdcms</li>
+			<li></li>
+		</ul>
+		<a href="#hdcms">HDCMS</a>
+		<div></div>
+		<div id="hdcms">hdcms内容管理系统</div>
+	</body>
+</html>

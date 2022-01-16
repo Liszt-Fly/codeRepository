@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			p::first-letter {
+				color: red;
+			}
+			p::first-line {
+				color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			1.直接copy你的代码。在html里这样写：然后，在highlight.pack.js引用后，调用hljs(highlight.js)对象的初始化方法。它会自动检测你的代码，然后自动加上对应的高亮标签。
+		</p>
+		<p>
+			2.使用工具将你的代码转换成自带高亮标签的代码。再放到pre>code标签里面。此方法无需调用initHighlightingOnLoad方法，即可高亮。
+			至于工具，这里提供两个，一个是1024代码高亮工具，另一个是highlight.js官方github项目里的tools
+			目录下的 developer.html 工具。这两个都可以将普通代码转为带高亮标签的代码。
+			此外需要注意的是，highlight.js的github项目下载了之后并不能直接使用。需要构建。构建方法：
+			作者：ANoman_M 链接：https://www.jianshu.com/p/e2f12268fe81 来源：简书
+			著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+		</p>
+	</body>
+</html>

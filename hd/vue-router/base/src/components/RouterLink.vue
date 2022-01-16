@@ -1,9 +1,10 @@
-<script setup lang="ts">
+<script setup lang="ts">import { path } from '../router';
+
 const prop = defineProps({
     to: { type: String, required: true }
 })
 const push = () => {
-    alert("abcdefg")
+    path.value = prop.to
 }
 </script>
 
