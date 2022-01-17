@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			p {
+				line-height: 2.5em;
+				color: #feacd2;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			目前绝大多数的Web内容都假设用户的指针定点设备为鼠标。然而，近年来的新兴设备支持更多不同方式的指针定点输入，如各类触控笔和触摸屏幕等。这就有必要扩展现存的定点设备事件模型，以有效追踪各类指针事件。
+			指针事件 - Pointer events
+			是一类可以为定点设备所触发的DOM事件。它们被用来创建一个可以有效掌握各类输入设备（鼠标、触控笔和单点或多点的手指触摸）的统一的DOM事件模型。所谓
+			指针
+			是指一个可以明确指向屏幕上某一组坐标的硬件设备。建立这样一个单独的事件模型可以有效的简化Web站点与应用所需的工作，同时也便于提供更加一致与良好的用户体验，无需关心不同用户和场景在输入硬件上的差异。另外，对于某些需要处理特定设备的场景，指针事件也定义了一个
+			pointerType (en-US) 属性用以查看触发事件的设备类型。 这些事件需要能够处理
+			mouse events 之类较为通用的指针输入（mousedown/pointerdown,
+			mousemove/pointermove, 等）。
+			因此，指针事件的类型，很大程度上类似于当前的鼠标事件类型。
+			此外，一个指针事件，也同时包含了鼠标事件中所常见的属性（client
+			coordinates, target element, button
+			states，等）以及适用于其他输入设备的新属性：pressure, contact geometry,
+			tilt, 等等。实际上，PointerEvent 接口继承了所有 MouseEvent
+			中的属性，以保障原有为鼠标事件所开发的内容能更加有效的迁移到指针事件。
+		</p>
+	</body>
+</html>

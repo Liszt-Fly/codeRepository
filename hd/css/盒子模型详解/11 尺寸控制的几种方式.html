@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/*范围进行约束*/
+			/*min-width 元素宽度低于min-width，就使用min-width  min-height max-width max-height*/
+			div {
+				width: 300px;
+				height: 300px;
+				border: solid 3px #ccc;
+				padding: 30px;
+			}
+			div img {
+				max-height: 90%;
+				min-width: 45%;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img
+				src="https://images.unsplash.com/photo-1642410909175-e6abda0f213c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+				alt=""
+			/>
+		</div>
+	</body>
+</html>

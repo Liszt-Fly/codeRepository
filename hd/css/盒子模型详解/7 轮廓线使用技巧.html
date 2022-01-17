@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			/*轮廓线不占用空间位置*/
+			article {
+				width: 300px;
+				height: 300px;
+				outline: solid 25px orangered;
+			}
+			div :nth-child(2) {
+				outline-color: black;
+			}
+			div {
+				margin-bottom: 30px;
+			}
+			input:focus {
+				outline: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<article>Houdunren</article>
+			<article>Houdunren</article>
+		</div>
+		<main>
+			<input type="text" />
+		</main>
+	</body>
+</html>
